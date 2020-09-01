@@ -46,6 +46,7 @@ body
 }
 .main-page{
   padding-top: 70px;
+  min-height: calc(100vh - 70px);
 }
 .container{
   margin: 0 auto;
