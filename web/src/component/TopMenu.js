@@ -9,8 +9,10 @@ export default class TopMenu extends Component {
     render() {
         return <div className="top-menu">
             {this.props.store.top_menu_links && this.props.store.top_menu_links.map(item =>
-                <div className="menu-item">
-                    <NavLink to="item.link">
+                <div className="menu-item"
+                    key={item.link}
+                >
+                    <NavLink to={item.link}>
                         {item.text}
                     </NavLink>
                 </div>)}
